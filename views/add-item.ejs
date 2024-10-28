@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPKN | ADD PROFILE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #000000;
+            background-image: url('https://i.ibb.co/KV1cGqC/pexels-charm-andaya-205356019-11652315.jpg" '); /* Use direct image URL */
+            background-size:cover; /* Cover the entire background */
+            background-repeat: no-repeat; /* No repeat */
+            background-position:center; /* Center the image */
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .header-bar {
+            background-color: rgba(0, 0, 0, 0.5); /* Dark blue color */
+            padding: 20px;
+            text-align: center;
+            color: white;
+            margin: 0;
+            margin-bottom: 60px;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+            border-radius: 8px;
+            margin-bottom: 70px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #003366; /* Dark blue */
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 95%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .form-group select {
+            width: 99%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 99%;
+            padding: 10px;
+            background-color: #d4af37; /* Golden background */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #b88b1d; /* Darker gold on hover */
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-bar">
+        <h1>ADD NEW PROFILE</h1>
+    </div>
+    <div class="form-container">
+        <form action="/add-item" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="salary">Salary:</label>
+                <input type="number" id="salary" name="salary" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="profession">Profession:</label>
+                <select id="profession" name="profession" required>
+                    <option value="doctor">Doctor</option>
+                    <option value="engineer">Engineer</option>
+                    <option value="farmer">Farmer</option>
+                    <option value="actor">Actor</option>
+                    <option value="businessman">Businessman</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="jadagam">Jadagam:</label>
+                <select id="jadagam" name="jadagam" required>
+                    <option value="sevai">Sevai</option>
+                    <option value="ragukedhu">Ragukedhu</option>
+                    <option value="suthajadagam">Suthajadagam</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <button type="submit">Add Item</button>
+        </form>
+        <a href="/" class="back-link">Back to Home</a>
+    </div>
+
+</body>
+</html>  
